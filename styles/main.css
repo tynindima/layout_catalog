@@ -1,0 +1,175 @@
+.header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+  .header .logo-link {
+    width: 40px;
+    height: 40px;
+    text-decoration: none; }
+  .header .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+    .header .links .link {
+      position: relative; }
+    .header .links .link:not(:last-of-type) {
+      margin-right: 20px; }
+
+.link-sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60px;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.link-sign:hover,
+.is-active {
+  color: #00acdc; }
+
+.is-active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #00acdc;
+  border-radius: 8px; }
+
+.card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 200px;
+  padding: 30px 14px 15px;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal; }
+  .card__photo {
+    display: block;
+    width: 160px;
+    height: 134px;
+    margin: 0 auto; }
+  .card__product-name {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 45px;
+    margin-bottom: 5px; }
+  .card__product-code {
+    margin: 0; }
+  .card__main-text {
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    margin: 0; }
+  .card__value {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15px; }
+  .card__price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px; }
+  .card__bottom {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    height: 40px;
+    width: 170px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #00acdc;
+    border-radius: 5px; }
+  .card__bottom:hover {
+    background-color: #fff;
+    border: 1px solid #00acdc;
+    color: #00acdc; }
+  .card__price-number {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px; }
+
+.stars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .stars__star {
+    margin-right: 4px;
+    height: 15px;
+    width: 15px;
+    background: url(../images/star.svg) no-repeat center; }
+  .stars__star:nth-child(-n+4) {
+    background: url(../images/star-active.svg) no-repeat center; }
+
+.uppercase {
+  text-transform: uppercase; }
+
+body {
+  width: 1200px;
+  margin: 0; }
+
+@media screen and (max-width: 1024px) {
+  body {
+    width: 1024px; } }
+
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 128px 28px; }
+  .card-list .card {
+    margin-bottom: 50px;
+    margin-right: 48px; }
+  .card-list .card:nth-child(4n) {
+    margin-right: 0; }
+
+@media screen and (max-width: 1024px) {
+  .card-list {
+    margin: 50px 40px 28px; } }
+
+/*# sourceMappingURL=main.css.map */
